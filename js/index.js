@@ -22,7 +22,7 @@ function Socket_io() {
         shade: 0.01
     });
     if ("WebSocket" in window) {
-        Socket = new WebSocket("ws://1.116.97.75:34567"); // 打开一个 web socket
+        Socket = new WebSocket("ws://127.0.0.1:34567"); // 打开一个 web socket //这里修改为你的服务器地址
         Socket.onopen = function() { //监听是否连接成功
             console.log('ws连接状态：' + Socket.readyState);
             if (Socket.readyState == 1) { //连接成功
