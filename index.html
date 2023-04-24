@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name=description content="Jmw-Power`Radio|音乐电台 - 聚合音乐点播平台,聊天打屁,一起听歌吧。">
+    <meta name=keywords content="电台, 音乐, 聊天, Jmw-Power`top, jmwpower">
+    <title>Jmw-Power`Radio|音乐电台</title>
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="referrer" content="no-referrer">
+    <link href="favicon.ico" rel="icon">
+    <link href="./dist/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css" rel="stylesheet">
+    <link href="./dist/bootstrap-icons-1.10.4/font/bootstrap-icons.css" rel="stylesheet">
+	<link href="./css/app.min.css" rel="stylesheet">
+    <link href="./css/index.css" rel="stylesheet">
+</head>
+
+<body>
+	<div id="bg">
+	    <div id="zz"></div>
+	    <div id="bg_img"></div>
+	</div>
+    <!-- layout -->
+    <div class="layout">
+
+        <!-- navigation -->
+        <nav class="navigation text-white">
+            <div class="nav-group">
+                <ul>
+                    <li class="logo" style="margin-top: 18px;">
+                        <a>Jmw`<br>Radio<span class="badge spinner-grow text-danger" id="network"></span></a>
+                    </li>
+                    <li style="margin-top: 3rem;" title="已点播歌曲列表">
+                        <a class="active" data-navigation-target="music_list_div" title="已点播歌曲列表">
+                            <i class="bi bi-music-note-list"></i>
+                        </a>
+                        <div style="text-align: center;"><small>列表</small></div>
+                    </li>
+                    <li title="点歌">
+                        <a data-navigation-target="search_list_div" title="点歌" id="dg_nav">
+                            <i class="bi bi-plus-circle-dotted"></i>
+                        </a>
+                        <div style="text-align: center;"><small>点歌</small></div>
+                    </li>
+                    <li title="热歌榜">
+                        <a data-navigation-target="hot_list_div" title="热歌榜">
+                            <i class="bi bi-fire"></i>
+                        </a>
+                        <div style="text-align: center;"><small>热歌</small></div>
+                    </li>
+                    <li class="brackets" title="房间列表">
+                        <a data-navigation-target="home_list_div" title="房间列表">
+                            <i class="bi bi-house-add"></i>
+                        </a>
+                        <div style="text-align: center;"><small>房间</small></div>
+                    </li>
+                    <li style="margin-top: 4rem;">
+                        <a class="dark-light-switcher" title="更换主题/暂不可用">
+                            <i class="bi bi-moon-stars"></i>
+                        </a>
+                    </li>
+                    <li title="个人信息">
+                        <a>
+                            <figure style="width: 48px;height: 48px;" data-navigation-target="user_div">
+                                <img src="./favicon.ico" class="img-fluid img-thumbnail" alt="用户头像" id="user_img">
+                            </figure>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- ./ navigation -->
+
+        <!-- content -->
+        <div class="content">
+
+            <!-- sidebar group -->
+            <div class="sidebar-group">
+
+                <!-- music_list_div sidebar -->
+                <div id="music_list_div" class="sidebar active">
+                    <header>
+                        <span>已点播列表</span>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a class="btn btn-outline-secondary" title="去点歌" data-navigation-target="search_list_div">
+                                    <i class="bi bi-plus-circle-dotted"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn btn-outline-secondary" title="热歌榜" data-navigation-target="hot_list_div">
+                                    <i class="bi bi-fire"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item d-md-none d-inline">
+                                <a class="btn btn-outline-secondary sidebar-close">
+                                    <i class="bi bi-x-circle"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </header><hr />
+                    <div class="sidebar-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-action" id="zzbf">
+								<picture>
+									<img src="./css/1.jpg" class="img-fluid img-thumbnail" alt="歌曲封面" id="list_img">
+								</picture>&nbsp;&nbsp;
+                                <div class="musics-list-body">
+									<div>
+										<h5 id="list_name">歌曲名</h5>
+										<p id="list_singer">歌手名</p>
+									</div>
+                                    <div class="musics-list-action">
+                                        <div class="music_list_icon" title="当前正在播放"><i class="bi bi-music-note"></i></div>
+                                        <p class="text-secondary" id="list_user">点播人</p>
+                                    </div>
+                                </div>
+                            </li>
+							<div id="music_lists">
+								<li class="list-group-item list-group-item-action">
+									<picture>
+										<img src="./css/1.jpg" class="img-fluid img-thumbnail" alt="...">
+									</picture>&nbsp;&nbsp;
+								    <div class="musics-list-body">
+										<div>
+											<h5>歌曲名</h5>
+											<p>歌手名</p>
+										</div>
+								        <div class="musics-list-action">
+								            <div class="action-toggle" title="顶歌"><i class="bi bi-arrow-up-circle"></i></div>
+								            <p class="text-secondary">点播人</p>
+								        </div>
+								    </div>
+								</li>
+							</div>
+                        </ul>
+                    </div>
+                </div>
+                <!-- ./ music_list_div sidebar -->
+
+                <!-- search_list_div sidebar -->
+                <div id="search_list_div" class="sidebar">
+                    <header>
+                        <span>搜索 _ 点歌</span>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a class="btn btn-outline-secondary" title="已点播列表" data-navigation-target="music_list_div">
+                                    <i class="bi bi-music-note-list"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn btn-outline-secondary" title="热歌榜" data-navigation-target="hot_list_div">
+                                    <i class="bi bi-fire"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item d-md-none d-inline">
+                                <a class="btn btn-outline-secondary text-danger sidebar-close">
+                                    <i class="bi bi-x-circle"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </header>
+                    <form>
+                        <input type="text" class="form-control form-control-sm" placeholder="输入歌曲关键字搜索" id="search_str"><br>
+                        <div class="radio" style="text-align: right;">
+                            <label>
+                                <input type="radio" name="search" value="qq">QQ
+                            </label>
+                            <label>
+                                <input type="radio" name="search" value="wy" checked>网易&nbsp;&nbsp;
+                            </label>
+                            <button type="button" class="btn btn-primary btn-sm" id="search_btn">搜索[单曲]</button>
+                        </div>
+                    </form><hr>
+                    <div class="sidebar-body" id="search_music_list_DIV">
+                        <ul class="list-group list-group-flush list-group-numbered" id="search_music_list">
+							<li class="list-group-item list-group-item-action">
+							    <div class="musics-list-body">
+									<div>
+										<h5>歌曲名</h5>
+										<p>歌手名</p>
+									</div>
+							        <div class="musics-list-action">
+							            <div class="action-toggle" title="点歌"><i class="bi bi-plus-lg"></i></div>
+							            <p class="text-secondary">平台</p>
+							        </div>
+							    </div>
+							</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- ./ search_list_div sidebar -->
+
+                <!-- 热歌榜 sidebar -->
+                <div id="hot_list_div" class="sidebar">
+                    <header>
+                        <span>热歌榜 _ 歌单</span>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a class="btn btn-outline-secondary" title="已点播列表" data-navigation-target="music_list_div">
+                                    <i class="bi bi-music-note-list"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn btn-outline-secondary" title="去点歌" data-navigation-target="search_list_div">
+                                    <i class="bi bi-plus-circle-dotted"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item d-md-none d-inline">
+                                <a class="btn btn-outline-secondary text-danger sidebar-close">
+                                    <i class="bi bi-x-circle"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </header>
+                    <form>
+                        <input type="text" class="form-control form-control-sm" placeholder="输入歌单关键字搜索" id="search_gd_str"><br>
+                        <div class="radio" style="text-align: right;">
+                            <label>
+                                <input type="radio" name="Search_platform" value="qq">QQ
+                            </label>
+                            <label>
+                                <input type="radio" name="Search_platform" value="wy" checked>网易&nbsp;
+                            </label>
+                            <button type="button" class="btn btn-danger btn-sm" id="rege_btn">热歌榜</button>&nbsp;&nbsp;
+                            <button type="button" class="btn btn-primary btn-sm" id="gedan_btn">搜索</button>
+                        </div>
+                    </form><hr />
+                    <div class="sidebar-body">
+                        <ul class="list-group list-group-flush list-group-numbered" id="search_music_list_gd">
+                            <li class="list-group-item list-group-item-action">
+                                <div class="musics-list-body">
+                            		<div>
+                            			<h5>歌单名</h5>
+                            			<p>来源</p>
+                            		</div>
+                                    <div class="musics-list-action">
+                                        <div class="action-toggle" title="查看歌单内歌曲"><i class="bi bi-file-earmark-music"></i></div>
+                                        <p class="text-secondary">平台</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- ./ 热歌榜 sidebar -->
+
+                <!-- 房间列表 sidebar -->
+                <div id="home_list_div" class="sidebar">
+                    <header>
+                        <span>房间列表</span>
+                        <ul class="list-inline">
+                            <li class="list-inline-item" onclick="$('#add_rooms_divs').modal('show');">
+                                <a class="btn btn-outline-secondary" title="新建房间" data-navigation-target="friends">
+                                    <i class="bi bi-house-add-fill"></i> &nbsp;&nbsp;开房
+                                </a>
+                            </li>
+                            <li class="list-inline-item d-md-none d-inline">
+                                <a class="btn btn-outline-secondary text-danger sidebar-close">
+                                    <i class="bi bi-x-circle"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </header>
+					<form>
+						<div class="row g-3">
+						  <div class="col">
+						    <input type="text" class="form-control form-control-sm" placeholder="房间ID" id="room_add_id">
+						  </div>
+						  <div class="col">
+						    <input type="text" class="form-control form-control-sm" placeholder="房间密码" id="room_add_ps">
+						  </div>
+						</div><br />
+					    <div style="text-align: right;">
+					        <div class="input-group-text btn btn-primary btn-sm" id="room_add_btn">确 认 加 入</div>
+					    </div>
+					</form><hr />
+                    <div class="sidebar-body">
+                        <ul class="list-group list-group-flush" id="rooms_div">
+                            <li class="list-group-item">
+                                <div class="musics-list-body">
+                                    <div>
+                                        <h5 class="text-primary">Jmw`Radio _ 吹水大厅</h5>
+                                        <p><i class="bi bi-headphones" title="房间人数"></i>&nbsp;<small>0</small>&nbsp;&nbsp;
+											<small class="text-light bg-secondary">ID:888</small> 请遵守法律法规,文明聊天!</p>
+                                    </div>
+                                    <div class="musics-list-action">
+                                        <div class="music_list_icon">
+											<i class="bi bi-clock-history" title="临时房"></i>&nbsp;&nbsp;
+                                            <i class="bi bi-house-heart" title="公开房"></i>&nbsp;&nbsp;
+                                        </div>
+                                        <p class="text-secondary" title="创建者">创建者</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- ./ 房间列表 sidebar -->
+				<!-- 个人信息 -->
+				<div id="user_div" class="sidebar">
+				    <header>
+				        <span>个人信息</span>
+						<ul class="list-inline">
+						    <li class="list-inline-item d-md-none d-inline">
+						        <a class="btn btn-outline-secondary text-danger sidebar-close">
+						            <i class="bi bi-x-circle"></i>
+						        </a>
+						    </li>
+						</ul>
+				    </header><hr>
+				    <div class="sidebar-body">
+						<div class="text-center">
+						    <figure>
+						        <img src="./favicon.ico" class="rounded-circle">
+						    </figure>
+						    <h5 id="user_name_title">Jmw`Radio [未登录]</h5><br>
+							<a class="text-muted font-italic" id='login_1' style="display: none;">注销()</a>
+							<a class="btn btn-outline-dark" id='login_0' onclick="$('#login_divs').modal('show');login_div();">登录(注册)</a>
+						</div><br><hr>
+						<div class="text-center">
+							<br><h5><strong class="text-secondary">关于</strong></h5><br>
+						    <h5>Jmw`Radio</h5>
+						    <small>本页面仅供研究学习演示使用!</small>
+						</div>
+				    </div>
+				</div>
+				<!-- 个人信息 -->
+
+            </div>
+            <!-- ./ sidebar group -->
+
+            <!-- chat -->
+            <div class="chat">
+                <div class="chat-header" style="border-bottom: 1px solid #adadad;">
+                    <div class="chat-header-music dropdown">
+                        <div class="cd" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./favicon.ico" alt="Radio" class="cd-center" id="radio_img" title="点击查看歌曲信息">
+                            <audio id="audio-player" volume="0.5" controls style="display: none;"></audio>
+                        </div>
+                        <div class="dropdown-menu text-muted">
+                    		<p>&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-music-note-beamed"></i>
+                    		&nbsp;<strong id="music_name">歌曲名</strong></p>
+                    		<p style="text-align: right;" title="歌手"><i class="bi bi-person"></i>&nbsp;
+                    		<span id="singer_name">歌手名</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                    		</p>
+                    		<hr>
+                    		<div style="text-align: right;" title="调节播放音量">
+                    		    <i class="bi bi-volume-off"></i>
+                    		    <input type="range" id="volume_value" min="0" max="100" value="50" title="调节播放音量">
+                    		    <i class="bi bi-volume-up"></i>
+                    		    [ <span id="volume_control">50</span> ]&nbsp;&nbsp;&nbsp;&nbsp;
+                    		</div>
+                        </div>
+                        <div class="chat-header-title">
+                            <h5><i class="bi bi-people" title="房间人数"></i>&nbsp;<small id="room_number">0</small>
+                    		&nbsp;&nbsp;<strong id="room_name">Jmw`Radio - 摸鱼大厅</strong></h5>
+                            <div class="text-success" id="music_name_div">
+                                <i class="bi bi-boombox"></i>&nbsp;<i id="music_name_singer">歌曲名 - 歌手名</i>
+                            </div>
+                            <div>
+                                [<i id="music_ing">00:00</i> : <i id="music_end">00:00</i>]&nbsp;&nbsp;&nbsp;&nbsp;
+                                <i class="bi bi-person-bounding-box"></i>&nbsp;<i id="user_names">Jmw`Radio</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-body">
+                    <div class="messages" id="chat_messages">
+						<!-- Received Message Start -->
+						<div class="message message-item">
+							<div class="message-wrapper">
+								<div class="message-content bg-primary-subtle">
+									<span> Jmw`Radio - 音乐电台欢迎您! <p>00/00/00 00:00:00</p></span>
+								</div>
+							</div>
+							<div class="message-options">
+								<div class="avatar avatar-sm"><img class="img" alt="" src="./css/1.jpg"></div>
+								<p>[未知 - 隐身] Jmw`Radio</p>
+							</div>
+						</div>
+						<!-- Received Message End -->
+						
+						<!-- Self Message Start -->
+						<div class="message self message-item outgoing-message">
+							<div class="message-wrapper">
+								<div class="message-content bg-primary">
+									<span>请遵守法律法规,文明发言,健康生活!<p>00/00/00 00:00:00</p></span>
+								</div>
+							</div>
+							<div class="message-options">
+								<div class="avatar avatar-sm"><img class="img" alt="" src="./css/1.jpg"></div>
+								<p>[未知 - 隐身] Jmw`Radio</p>
+							</div>
+						</div>
+						<!-- Self Message End -->
+                        <div class="message-item messages-divider" data-label="Jmw`Radio 欢迎您"></div>
+                    </div>
+                </div>
+				<figure class="d-md-none d-inline" style="width: 48px;height: 48px;background: none;position:fixed;bottom:30vh;left:5px;" data-navigation-target="user_div">
+				    <img src="./favicon.ico" class="img-fluid img-thumbnail" alt="头像" id="user_img2">
+				</figure>
+                <div class="chat-footer">
+					<ul class="list-inline" style="margin-left: 32px;margin-right: 32px; text-align: right;background: none;" id="dban">
+					    <li class="list-inline-item d-md-none d-inline fw-light" title="房间" style="background: none;">
+					        <small class="badge rounded-pill text-bg-secondary" data-navigation-target="home_list_div">
+					            <i class="bi bi-house-heart"></i> 房间
+					        </small>
+					    </li>
+					    <li class="list-inline-item d-md-none d-inline fw-light" title="列表" style="background: none;">
+					        <small class="badge rounded-pill text-bg-secondary" data-navigation-target="music_list_div">
+					            <i class="bi bi-music-note-list"></i> 列表
+					        </small>
+					    </li>
+					    <li class="list-inline-item d-md-none d-inline fw-light" data-navigation-target="search_list_div" title="点歌" style="background: none;">
+					        <small class="badge rounded-pill text-bg-secondary">
+					            <i class="bi bi-plus-square-dotted"></i> 点歌
+					        </small>
+					    </li>
+					    <li class="list-inline-item fw-light" title="切歌" style="background: none;">
+					        <small class="badge rounded-pill text-bg-secondary" id="qiege_btn">
+					            <i class="bi bi-backspace-reverse"></i> 切歌 
+					        </small>
+					    </li>
+					    <li class="list-inline-item fw-light" title="静音 / 解除静音" id="jinyin" style="background: none;">
+					        <small class="badge rounded-pill text-bg-secondary">
+					            <i class="bi bi-volume-mute"></i> 静音 
+								<!-- <i class="bi bi-volume-mute-fill"></i> -->
+					        </small>
+					    </li>
+					</ul>
+					<div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height:2px;margin-top: -10px;">
+					  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%"></div>
+					</div>
+                    <div style="height: 22px;width: 100%;overflow: hidden;font-size: 10px;">
+						<small id="music_lycs" class="text-success-emphasis">未获取到歌词信息</small>
+					</div>
+                    <div style="display:flex;" class="dropup">
+                        <ul class="dropdown-menu" id="emoji_div">
+                            <img src="./css/emoji/吐.png" alt="error" title="吐" class="emoji" onclick="add_emoji('[吐]')" />
+                        </ul>
+                        <textarea rows="3" id="str" placeholder="请遵守法律法规,文明聊天!
+  [ Ctrl + Enter 发送 ]"  data-bs-toggle="dropdown" aria-expanded="false"></textarea>
+                        <button class="btn btn-primary" id="msg_btn">
+                            &nbsp;&nbsp;<i class="bi bi-cursor" style="flex: 1;font-size: 2rem;"></i>&nbsp;&nbsp;</button>
+                    </div>
+                </div>
+            </div>
+            <!-- ./ chat -->
+        </div>
+        <!-- ./ content -->
+
+    </div>
+    <!-- ./ layout -->
+
+    <!-- 登录div start -->
+    <div class="modal fade" id="login_divs" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="login_title">账户登录</h5>
+                    <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-primary-subtle">
+                    <div id="login-div">
+                        <div class="form-group">
+                            <label>Email [邮箱账号]</label>
+                            <input type="email" class="form-control" id="user_email" placeholder="Email [邮箱账号]">
+                        </div><br>
+                        <div class="form-group">
+                            <label>Password [账户密码]</label>
+                            <input type="password" class="form-control" id="user_password" placeholder="Password [账户密码]">
+                        </div><br>
+                        <div style="width: 100%;text-align: right;">
+                            <small title="点我注册账号!" onclick="register_div();"><a>注册</a></small>&nbsp;&nbsp;&nbsp;
+                            <small title="忘记密码?点击找回密码!" onclick="password_div();"><a>忘记密码?</a></small><br><br>
+                            <button class="btn btn-primary" id="login_up">登 录 账 户</button>
+                        </div>
+                    </div>
+                    <div id="register-div" style="display: none;">
+						<div class="form-group">
+						    <label>Name [账号名称]</label>
+						    <input type="text" class="form-control" id="register_id" placeholder="Name [账号名称]">
+						</div><br>
+                        <div class="form-group">
+                            <label>Email [邮箱账号]</label>
+                            <input type="email" class="form-control" id="register_email" placeholder="Email [邮箱账号]">
+                        </div><br>
+                        <div class="form-group">
+                            <label> Password [密码]</label>
+                            <input type="password" class="form-control" id="register_password" placeholder="Password [密码]">
+                        </div><br>
+                        <div class="form-group">
+                            <label>Code [验证码]</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="register_token" placeholder="Code [验证码]">
+                                <div class="btn btn-secondary" id="token_1">获取验证码</div>
+                            </div>
+                        </div><br>
+                        <div style="width: 100%;text-align: right;">
+                            <small title="点我登录账号!" onclick="login_div();"><a>登录</a></small>&nbsp;&nbsp;&nbsp;
+                            <small title="忘记密码?点击找回密码!" onclick="password_div();"><a>忘记密码?</a></small><br><br>
+                            <button class="btn btn-primary" id="register_btn">注 册 账 户</button>
+                        </div>
+                    </div>
+                    <div id="password-div" style="display: none;">
+                        <div class="form-group">
+                            <label>Email [邮箱账号]</label>
+                            <input type="email" class="form-control" id="password_email" placeholder="Email [邮箱账号]">
+                        </div><br>
+                        <div class="form-group">
+                            <label> New Password [新密码]</label>
+                            <input type="password" class="form-control" id="password_password" placeholder="New Password [新密码]">
+                        </div><br>
+                        <div class="form-group">
+                            <label>Code [验证码]</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="password_token" placeholder="Code [验证码]">
+                                <div class="btn btn-secondary" id="token_2">获取验证码</div>
+                            </div>
+                        </div><br>
+                        <div style="width: 100%;text-align: right;">
+                            <small title="点我登录账号!" onclick="login_div();"><a>登录</a></small>&nbsp;&nbsp;&nbsp;
+                            <small title="点我注册账号!" onclick="register_div();"><a>注册</a></small><br><br>
+                            <button class="btn btn-primary" id="password_btn">修 改 密 码</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 登录div end -->
+	
+	<!-- 添加房间div start -->
+	<div class="modal fade" id="add_rooms_divs" tabindex="-1" aria-hidden="true">
+	    <div class="modal-dialog modal-sm">
+	        <div class="modal-content">
+	            <div class="modal-header bg-dark text-white">
+	                <h5 class="modal-title">添加房间</h5>
+	                <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+	            </div>
+	            <div class="modal-body bg-dark-subtle">
+	                <div id="register-div">
+						<div class="form-group">
+						    <label>Name [房间名称]</label>
+						    <input type="text" class="form-control" id="add_rooms_id" placeholder="Name [房间名称]">
+						</div><br>
+	                    <div class="form-group">
+	                        <label>Msg [房间简介]</label>
+	                        <input type="text" class="form-control" id="add_rooms_msg" placeholder="Msg [房间简介]">
+	                    </div><br>
+	                    <div class="form-group">
+	                        <label> 密码 [留空则为免密]</label>
+	                        <input type="password" class="form-control" id="add_rooms_ps" placeholder="密码 [留空则为免密]">
+	                    </div><br>
+						<div class="form-group" title="无授权码将生成临时房, 临时房将会在无人状态下60分钟后清理!">
+						    <label> 验证 [永久房激活码]</label>
+						    <input type="password" class="form-control" id="add_rooms_tk" placeholder="验证 [永久房激活码]">
+						</div><br>
+	                    <div class="form-check">
+	                      <input class="form-check-input" type="checkbox" id="add_rooms_power"/>
+	                      <label class="form-check-label" for="flexCheckDefault">是否允许游客进入,勾选禁止</label>
+	                    </div><br>
+	                    <div style="width: 100%;text-align: right;">
+	                        <button class="btn btn-primary" id="add_room_btn">新 建 房 间</button>&nbsp;&nbsp;&nbsp;
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<!-- 添加房间div end -->
+
+    <script src="./dist/jquery.js" type="text/javascript"></script>
+    <script src="./dist/jquery.cookie.js" type="text/javascript"></script>
+    <script src="./dist/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.js" type="text/javascript"></script>
+    <script src="./dist/layer/layer.js" type="text/javascript"></script>
+    <script src="./dist/multiavatar.min.js" type="text/javascript"></script>
+	<script src="./js/app.min.js" type="text/javascript"></script>
+    <script>
+        document.write("<script src='./js/index.js?version="+new Date().getTime()+"'><"+'/'+"script>");
+		document.write("<script src='./js/login.js?version="+new Date().getTime()+"'><"+'/'+"script>");
+    </script>
+</body>
+
+</html>

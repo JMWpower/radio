@@ -1,0 +1,617 @@
+2023-04-18 19:18:05 pid:1 TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in D:\laragon\www\jqueryltmoban\io\run.php:219
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(88): play_next_song()
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(238): {closure}()
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(299): Workerman\Events\Select->tick()
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\jqueryltmoban\io\run.php(267): Workerman\Worker::runAll()
+#7 {main}
+2023-04-18 20:23:05 pid:1 Error: Cannot unset string offsets in D:\laragon\www\jqueryltmoban\io\run.php:47
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(65): get_rooms(Object(Redis))
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(2570): {closure}(Object(Workerman\Connection\TcpConnection))
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Worker->acceptConnection(Resource id #22)
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\jqueryltmoban\io\run.php(261): Workerman\Worker::runAll()
+#7 {main}
+2023-04-18 22:01:18 pid:1 Error: Cannot unset string offsets in D:\laragon\www\jqueryltmoban\io\run.php:56
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(75): get_rooms(Object(Redis))
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(2570): {closure}(Object(Workerman\Connection\TcpConnection))
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Worker->acceptConnection(Resource id #22)
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\jqueryltmoban\io\run.php(227): Workerman\Worker::runAll()
+#7 {main}
+2023-04-18 22:07:30 pid:1 Error: Cannot unset string offsets in D:\laragon\www\jqueryltmoban\io\run.php:57
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(76): get_rooms(Object(Redis))
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(2570): {closure}(Object(Workerman\Connection\TcpConnection))
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Worker->acceptConnection(Resource id #22)
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\jqueryltmoban\io\run.php(228): Workerman\Worker::runAll()
+#7 {main}
+2023-04-18 22:28:12 pid:1 TypeError: Cannot access offset of type string on string in D:\laragon\www\jqueryltmoban\io\run.php:59
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(82): get_rooms(Object(Redis), 888)
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(2570): {closure}(Object(Workerman\Connection\TcpConnection))
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Worker->acceptConnection(Resource id #22)
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\jqueryltmoban\io\run.php(234): Workerman\Worker::runAll()
+#7 {main}
+2023-04-18 22:58:10 pid:1 TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in D:\laragon\www\jqueryltmoban\io\run.php:131
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(131): in_array('643eb00102b4e', NULL)
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\jqueryltmoban\io\run.php(236): Workerman\Worker::runAll()
+#7 {main}
+2023-04-18 23:33:04 pid:1 TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in D:\laragon\www\jqueryltmoban\io\run.php:138
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(138): in_array(NULL, NULL)
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\jqueryltmoban\io\run.php(253): Workerman\Worker::runAll()
+#7 {main}
+2023-04-18 23:34:02 pid:1 TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in D:\laragon\www\jqueryltmoban\io\run.php:137
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(137): in_array('127.0.0.1', NULL)
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\jqueryltmoban\io\run.php(252): Workerman\Worker::runAll()
+#7 {main}
+2023-04-18 23:41:10 pid:1 TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in D:\laragon\www\jqueryltmoban\io\run.php:134
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(134): in_array('643eba10cb420', NULL)
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\jqueryltmoban\io\run.php(235): Workerman\Worker::runAll()
+#7 {main}
+2023-04-18 23:46:14 pid:1 TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in D:\laragon\www\jqueryltmoban\io\run.php:134
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(134): in_array('643ebb42a8df9', NULL)
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\jqueryltmoban\io\run.php(235): Workerman\Worker::runAll()
+#7 {main}
+2023-04-18 23:47:11 pid:1 TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in D:\laragon\www\jqueryltmoban\io\run.php:134
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(134): in_array('643ebb7b1198c', NULL)
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\jqueryltmoban\io\run.php(235): Workerman\Worker::runAll()
+#7 {main}
+2023-04-18 23:51:50 pid:1 TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in D:\laragon\www\jqueryltmoban\io\run.php:134
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(134): in_array('643ebc94eedcd', NULL)
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\jqueryltmoban\io\run.php(235): Workerman\Worker::runAll()
+#7 {main}
+2023-04-18 23:53:15 pid:1 TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in D:\laragon\www\jqueryltmoban\io\run.php:136
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(136): in_array('643ebce35a6bf', NULL)
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\jqueryltmoban\io\run.php(237): Workerman\Worker::runAll()
+#7 {main}
+2023-04-19 00:00:27 pid:1 TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in D:\laragon\www\jqueryltmoban\io\run.php:161
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(161): in_array('643ebdb827c84', NULL)
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\jqueryltmoban\io\run.php(262): Workerman\Worker::runAll()
+#7 {main}
+2023-04-19 00:22:49 pid:1 TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in D:\laragon\www\jqueryltmoban\io\run.php:161
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(161): in_array('643ec3bd05a8e', NULL)
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\jqueryltmoban\io\run.php(262): Workerman\Worker::runAll()
+#7 {main}
+2023-04-19 00:28:45 pid:1 TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in D:\laragon\www\jqueryltmoban\io\run.php:154
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(154): in_array('643ec53410d68', NULL)
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\jqueryltmoban\io\run.php(255): Workerman\Worker::runAll()
+#7 {main}
+2023-04-19 00:34:33 pid:1 TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in D:\laragon\www\jqueryltmoban\io\run.php:155
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(155): in_array('643ec690019a3', NULL)
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\jqueryltmoban\io\run.php(256): Workerman\Worker::runAll()
+#7 {main}
+2023-04-19 00:37:25 pid:1 TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in D:\laragon\www\jqueryltmoban\io\run.php:156
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(156): in_array('643ec74166ba5', NULL)
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\jqueryltmoban\io\run.php(257): Workerman\Worker::runAll()
+#7 {main}
+2023-04-19 00:39:01 pid:1 TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in D:\laragon\www\jqueryltmoban\io\run.php:156
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(156): in_array('643ec7a3a7c1f', NULL)
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\jqueryltmoban\io\run.php(257): Workerman\Worker::runAll()
+#7 {main}
+2023-04-19 00:39:41 pid:1 TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in D:\laragon\www\jqueryltmoban\io\run.php:156
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(156): in_array('643ec7cb2ebcb', NULL)
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\jqueryltmoban\io\run.php(257): Workerman\Worker::runAll()
+#7 {main}
+2023-04-19 00:41:03 pid:1 TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in D:\laragon\www\jqueryltmoban\io\run.php:156
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(156): in_array('643ec81e0d338', NULL)
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\jqueryltmoban\io\run.php(257): Workerman\Worker::runAll()
+#7 {main}
+2023-04-19 15:03:00 pid:1 ValueError: array_rand(): Argument #1 ($array) cannot be empty in D:\laragon\www\jqueryltmoban\io\run.php:171
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(171): array_rand(Array)
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(238): {closure}()
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(299): Workerman\Events\Select->tick()
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\jqueryltmoban\io\run.php(316): Workerman\Worker::runAll()
+#7 {main}
+2023-04-19 15:04:08 pid:1 ValueError: array_rand(): Argument #1 ($array) cannot be empty in D:\laragon\www\jqueryltmoban\io\run.php:171
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(171): array_rand(Array)
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(238): {closure}()
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(299): Workerman\Events\Select->tick()
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\jqueryltmoban\io\run.php(316): Workerman\Worker::runAll()
+#7 {main}
+2023-04-19 15:07:22 pid:1 ValueError: array_rand(): Argument #1 ($array) cannot be empty in D:\laragon\www\jqueryltmoban\io\run.php:174
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(174): array_rand(Array)
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(238): {closure}()
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(299): Workerman\Events\Select->tick()
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\jqueryltmoban\io\run.php(319): Workerman\Worker::runAll()
+#7 {main}
+2023-04-19 15:32:21 pid:1 ValueError: array_rand(): Argument #1 ($array) cannot be empty in D:\laragon\www\jqueryltmoban\io\run.php:174
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(174): array_rand(Array)
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(238): {closure}()
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(299): Workerman\Events\Select->tick()
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\jqueryltmoban\io\run.php(328): Workerman\Worker::runAll()
+#7 {main}
+2023-04-19 16:22:54 pid:1 TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in D:\laragon\www\jqueryltmoban\io\run.php:270
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(172): play_next_song(Object(Redis), NULL)
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(238): {closure}()
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(299): Workerman\Events\Select->tick()
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\jqueryltmoban\io\run.php(318): Workerman\Worker::runAll()
+#7 {main}
+2023-04-19 16:53:45 pid:1 TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in D:\laragon\www\jqueryltmoban\io\run.php:243
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(145): play_next_song(Object(Redis), NULL)
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(238): {closure}()
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(299): Workerman\Events\Select->tick()
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\jqueryltmoban\io\run.php(291): Workerman\Worker::runAll()
+#7 {main}
+2023-04-19 17:07:18 pid:1 TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in D:\laragon\www\jqueryltmoban\io\run.php:252
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(145): play_next_song(Object(Redis), 888)
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(238): {closure}()
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(299): Workerman\Events\Select->tick()
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\jqueryltmoban\io\run.php(300): Workerman\Worker::runAll()
+#7 {main}
+2023-04-19 17:19:36 pid:1 TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in D:\laragon\www\jqueryltmoban\io\run.php:252
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(145): play_next_song(Object(Redis), 888)
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(238): {closure}()
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(299): Workerman\Events\Select->tick()
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\jqueryltmoban\io\run.php(300): Workerman\Worker::runAll()
+#7 {main}
+2023-04-19 17:58:05 pid:1 TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in D:\laragon\www\jqueryltmoban\io\run.php:246
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(246): in_array('music_id', NULL)
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #27)
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\jqueryltmoban\io\run.php(351): Workerman\Worker::runAll()
+#7 {main}
+2023-04-19 17:59:38 pid:1 TypeError: in_array(): Argument #2 ($haystack) must be of type array, string given in D:\laragon\www\jqueryltmoban\io\run.php:246
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(246): in_array('music_id', '000wkTbk3kaHCk')
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\jqueryltmoban\io\run.php(351): Workerman\Worker::runAll()
+#7 {main}
+2023-04-19 18:00:30 pid:1 TypeError: in_array(): Argument #2 ($haystack) must be of type array, string given in D:\laragon\www\jqueryltmoban\io\run.php:246
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(246): in_array('', '167827')
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\jqueryltmoban\io\run.php(351): Workerman\Worker::runAll()
+#7 {main}
+2023-04-19 19:13:29 pid:1 TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in D:\laragon\www\jqueryltmoban\io\run.php:96
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(96): in_array('643fcc5dba709', NULL)
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Connection\TcpConnection.php(928): {closure}(Object(Workerman\Connection\TcpConnection))
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Connection\TcpConnection.php(835): Workerman\Connection\TcpConnection->destroy()
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Protocols\Websocket.php(118): Workerman\Connection\TcpConnection->close('\x88\x02\x03\xE8', true)
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Connection\TcpConnection.php(609): Workerman\Protocols\Websocket::input('\x88\x82\x1F6\x84\xEA\x1C\xDF', Object(Workerman\Connection\TcpConnection))
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#6 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#7 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#8 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#9 D:\laragon\www\jqueryltmoban\io\run.php(378): Workerman\Worker::runAll()
+#10 {main}
+2023-04-19 19:20:51 pid:1 TypeError: reset(): Argument #1 ($array) must be of type array, null given in D:\laragon\www\jqueryltmoban\io\run.php:299
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(299): reset(NULL)
+#1 D:\laragon\www\jqueryltmoban\io\run.php(137): play_next_song(Object(Redis), 888, 'Jmw`Radio')
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(238): {closure}()
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(299): Workerman\Events\Select->tick()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#6 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#7 D:\laragon\www\jqueryltmoban\io\run.php(375): Workerman\Worker::runAll()
+#8 {main}
+2023-04-19 19:20:51 pid:1 TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in D:\laragon\www\jqueryltmoban\io\run.php:96
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(96): in_array('643fcdfb53086', NULL)
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Connection\TcpConnection.php(928): {closure}(Object(Workerman\Connection\TcpConnection))
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Connection\TcpConnection.php(835): Workerman\Connection\TcpConnection->destroy()
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(2523): Workerman\Connection\TcpConnection->close()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1961): Workerman\Worker->stop()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(240): Workerman\Worker::stopAll(250, Object(TypeError))
+#6 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(299): Workerman\Events\Select->tick()
+#7 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#8 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#9 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#10 D:\laragon\www\jqueryltmoban\io\run.php(375): Workerman\Worker::runAll()
+#11 {main}
+2023-04-19 19:32:45 pid:1 TypeError: reset(): Argument #1 ($array) must be of type array, null given in D:\laragon\www\jqueryltmoban\io\run.php:301
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(301): reset(NULL)
+#1 D:\laragon\www\jqueryltmoban\io\run.php(139): play_next_song(Object(Redis), 888, 'Jmw`Radio')
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(238): {closure}()
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(299): Workerman\Events\Select->tick()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#6 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#7 D:\laragon\www\jqueryltmoban\io\run.php(377): Workerman\Worker::runAll()
+#8 {main}
+2023-04-19 19:32:45 pid:1 TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in D:\laragon\www\jqueryltmoban\io\run.php:97
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(97): in_array('643fd07464bca', NULL)
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Connection\TcpConnection.php(928): {closure}(Object(Workerman\Connection\TcpConnection))
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Connection\TcpConnection.php(835): Workerman\Connection\TcpConnection->destroy()
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(2523): Workerman\Connection\TcpConnection->close()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1961): Workerman\Worker->stop()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(240): Workerman\Worker::stopAll(250, Object(TypeError))
+#6 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(299): Workerman\Events\Select->tick()
+#7 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#8 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#9 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#10 D:\laragon\www\jqueryltmoban\io\run.php(377): Workerman\Worker::runAll()
+#11 {main}
+2023-04-19 19:43:38 pid:1 TypeError: reset(): Argument #1 ($array) must be of type array, null given in D:\laragon\www\jqueryltmoban\io\run.php:303
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(303): reset(NULL)
+#1 D:\laragon\www\jqueryltmoban\io\run.php(140): play_next_song(Object(Redis), 888, 'Jmw`Radio')
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(238): {closure}()
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(299): Workerman\Events\Select->tick()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#6 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#7 D:\laragon\www\jqueryltmoban\io\run.php(379): Workerman\Worker::runAll()
+#8 {main}
+2023-04-19 19:43:39 pid:1 TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in D:\laragon\www\jqueryltmoban\io\run.php:98
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(98): in_array('643fd1dbe7142', NULL)
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Connection\TcpConnection.php(928): {closure}(Object(Workerman\Connection\TcpConnection))
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Connection\TcpConnection.php(835): Workerman\Connection\TcpConnection->destroy()
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(2523): Workerman\Connection\TcpConnection->close()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1961): Workerman\Worker->stop()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(240): Workerman\Worker::stopAll(250, Object(TypeError))
+#6 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(299): Workerman\Events\Select->tick()
+#7 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#8 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#9 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#10 D:\laragon\www\jqueryltmoban\io\run.php(379): Workerman\Worker::runAll()
+#11 {main}
+2023-04-19 20:22:07 pid:1 TypeError: reset(): Argument #1 ($array) must be of type array, null given in D:\laragon\www\jqueryltmoban\io\run.php:307
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(307): reset(NULL)
+#1 D:\laragon\www\jqueryltmoban\io\run.php(247): play_next_song(Object(Redis), '888', '\xE5\x90\x83\xE8\x8A\xB1\xE6\xA4\x92\xE7\x9A\x84\xE5\x96\xB5...')
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#6 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#7 D:\laragon\www\jqueryltmoban\io\run.php(383): Workerman\Worker::runAll()
+#8 {main}
+2023-04-19 20:26:18 pid:1 TypeError: reset(): Argument #1 ($array) must be of type array, null given in D:\laragon\www\jqueryltmoban\io\run.php:307
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(307): reset(NULL)
+#1 D:\laragon\www\jqueryltmoban\io\run.php(247): play_next_song(Object(Redis), '888', '\xE5\x90\x83\xE8\x8A\xB1\xE6\xA4\x92\xE7\x9A\x84\xE5\x96\xB5...')
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#6 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#7 D:\laragon\www\jqueryltmoban\io\run.php(383): Workerman\Worker::runAll()
+#8 {main}
+2023-04-19 20:36:08 pid:1 TypeError: in_array(): Argument #2 ($haystack) must be of type array, string given in D:\laragon\www\jqueryltmoban\io\run.php:184
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(184): in_array(Array, '569212211')
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #26)
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\jqueryltmoban\io\run.php(381): Workerman\Worker::runAll()
+#7 {main}
+2023-04-19 20:38:23 pid:1 TypeError: in_array(): Argument #2 ($haystack) must be of type array, string given in D:\laragon\www\jqueryltmoban\io\run.php:184
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(184): in_array(Array, '569213220')
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\jqueryltmoban\io\run.php(381): Workerman\Worker::runAll()
+#7 {main}
+2023-04-19 20:55:04 pid:1 Error: Call to undefined method Redis::lPos() in D:\laragon\www\jqueryltmoban\io\run.php:263
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #26)
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#5 D:\laragon\www\jqueryltmoban\io\run.php(383): Workerman\Worker::runAll()
+#6 {main}
+2023-04-19 20:59:02 pid:1 Error: Call to undefined method Redis::lPos() in D:\laragon\www\jqueryltmoban\io\run.php:264
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#5 D:\laragon\www\jqueryltmoban\io\run.php(386): Workerman\Worker::runAll()
+#6 {main}
+2023-04-19 23:31:56 pid:1 TypeError: Cannot access offset of type string on string in D:\laragon\www\jqueryltmoban\io\run.php:328
+Stack trace:
+#0 D:\laragon\www\jqueryltmoban\io\run.php(140): play_next_song(Object(Redis), 888, 'Jmw`Radio')
+#1 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(238): {closure}()
+#2 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Events\Select.php(299): Workerman\Events\Select->tick()
+#3 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\jqueryltmoban\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\jqueryltmoban\io\run.php(394): Workerman\Worker::runAll()
+#7 {main}
+2023-04-20 21:43:20 pid:1 TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in D:\laragon\www\radio\io\run.php:211
+Stack trace:
+#0 D:\laragon\www\radio\io\run.php(211): in_array('64414178b5065', NULL)
+#1 D:\laragon\www\radio\io\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 D:\laragon\www\radio\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#3 D:\laragon\www\radio\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\radio\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\radio\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\radio\io\run.php(448): Workerman\Worker::runAll()
+#7 {main}
+2023-04-20 21:43:21 pid:1 TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in D:\laragon\www\radio\io\run.php:100
+Stack trace:
+#0 D:\laragon\www\radio\io\run.php(100): in_array('64414178b5065', NULL)
+#1 D:\laragon\www\radio\io\vendor\workerman\workerman\Connection\TcpConnection.php(928): {closure}(Object(Workerman\Connection\TcpConnection))
+#2 D:\laragon\www\radio\io\vendor\workerman\workerman\Connection\TcpConnection.php(835): Workerman\Connection\TcpConnection->destroy()
+#3 D:\laragon\www\radio\io\vendor\workerman\workerman\Worker.php(2523): Workerman\Connection\TcpConnection->close()
+#4 D:\laragon\www\radio\io\vendor\workerman\workerman\Worker.php(1961): Workerman\Worker->stop()
+#5 D:\laragon\www\radio\io\vendor\workerman\workerman\Connection\TcpConnection.php(650): Workerman\Worker::stopAll(250, Object(TypeError))
+#6 D:\laragon\www\radio\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#7 D:\laragon\www\radio\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#8 D:\laragon\www\radio\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#9 D:\laragon\www\radio\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#10 D:\laragon\www\radio\io\run.php(448): Workerman\Worker::runAll()
+#11 {main}
+2023-04-20 21:44:38 pid:1 TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in D:\laragon\www\radio\io\run.php:211
+Stack trace:
+#0 D:\laragon\www\radio\io\run.php(211): in_array('644141c604611', NULL)
+#1 D:\laragon\www\radio\io\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 D:\laragon\www\radio\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#3 D:\laragon\www\radio\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\radio\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\radio\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\radio\io\run.php(448): Workerman\Worker::runAll()
+#7 {main}
+2023-04-20 21:44:38 pid:1 TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in D:\laragon\www\radio\io\run.php:100
+Stack trace:
+#0 D:\laragon\www\radio\io\run.php(100): in_array('644141c604611', NULL)
+#1 D:\laragon\www\radio\io\vendor\workerman\workerman\Connection\TcpConnection.php(928): {closure}(Object(Workerman\Connection\TcpConnection))
+#2 D:\laragon\www\radio\io\vendor\workerman\workerman\Connection\TcpConnection.php(835): Workerman\Connection\TcpConnection->destroy()
+#3 D:\laragon\www\radio\io\vendor\workerman\workerman\Worker.php(2523): Workerman\Connection\TcpConnection->close()
+#4 D:\laragon\www\radio\io\vendor\workerman\workerman\Worker.php(1961): Workerman\Worker->stop()
+#5 D:\laragon\www\radio\io\vendor\workerman\workerman\Connection\TcpConnection.php(650): Workerman\Worker::stopAll(250, Object(TypeError))
+#6 D:\laragon\www\radio\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#7 D:\laragon\www\radio\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#8 D:\laragon\www\radio\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#9 D:\laragon\www\radio\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#10 D:\laragon\www\radio\io\run.php(448): Workerman\Worker::runAll()
+#11 {main}
+2023-04-21 12:12:43 pid:1 ArgumentCountError: in_array() expects at least 2 arguments, 1 given in D:\laragon\www\radio\io\run.php:442
+Stack trace:
+#0 D:\laragon\www\radio\io\run.php(442): in_array(Array)
+#1 D:\laragon\www\radio\io\run.php(270): query_ip_location('127.0.0.1')
+#2 D:\laragon\www\radio\io\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 D:\laragon\www\radio\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#4 D:\laragon\www\radio\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#5 D:\laragon\www\radio\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#6 D:\laragon\www\radio\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#7 D:\laragon\www\radio\io\run.php(485): Workerman\Worker::runAll()
+#8 {main}
+2023-04-21 19:00:36 pid:1 ArgumentCountError: Too few arguments to function get_qqgdlist(), 0 passed in D:\laragon\www\radio\io\run.php on line 237 and exactly 1 expected in D:\laragon\www\radio\io\qq.php:75
+Stack trace:
+#0 D:\laragon\www\radio\io\run.php(237): get_qqgdlist()
+#1 D:\laragon\www\radio\io\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 D:\laragon\www\radio\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #28)
+#3 D:\laragon\www\radio\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\laragon\www\radio\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\laragon\www\radio\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\laragon\www\radio\io\run.php(548): Workerman\Worker::runAll()
+#7 {main}
+2023-04-21 22:13:29 pid:3614942 Workerman[run.php] stop 
+2023-04-21 22:13:29 pid:3614942 Workerman[run.php] not run
+2023-04-21 22:14:23 pid:3615170 Workerman[run.php] start in DAEMON mode
+2023-04-21 22:16:46 pid:3615831 Workerman[run.php] stop 
+2023-04-21 22:16:46 pid:3615831 Workerman[run.php] not run
+2023-04-21 22:17:16 pid:3615952 Workerman[run.php] restart 
+2023-04-21 22:17:16 pid:3615952 Workerman[run.php] is stopping ...
+2023-04-21 22:17:16 pid:3615952 Workerman[run.php] stop success
+2023-04-21 22:18:39 pid:3616285 Workerman[run.php] stop 
+2023-04-21 22:18:39 pid:3616285 Workerman[run.php] not run
+2023-04-21 22:21:42 pid:3617081 Workerman[run.php] status 
+2023-04-21 22:21:42 pid:3617081 Workerman[run.php] not run
+2023-04-21 22:22:06 pid:3617191 Workerman[run.php] connections 
+2023-04-21 22:22:06 pid:3617191 Workerman[run.php] not run
+2023-04-21 22:22:52 pid:3272405 Workerman[run.php] stopping ...
+2023-04-21 22:22:52 pid:3272405 Workerman[run.php] stopping ...
+2023-04-21 22:22:52 pid:3272405 Workerman[run.php] has been stopped
+2023-04-21 22:25:12 pid:3549 Workerman[run.php] start in DAEMON mode
+2023-04-21 22:31:45 pid:5678 Workerman[run.php] stop 
+2023-04-21 22:31:45 pid:5678 Workerman[run.php] is stopping ...
+2023-04-21 22:31:45 pid:3554 Workerman[run.php] stopping ...
+2023-04-21 22:31:45 pid:3554 Workerman[run.php] has been stopped
+2023-04-21 22:31:45 pid:5678 Workerman[run.php] stop success
+2023-04-21 22:31:59 pid:5752 Workerman[run.php] start in DAEMON mode
+2023-04-21 23:16:37 pid:17440 Workerman[run.php] stop 
+2023-04-21 23:16:37 pid:17440 Workerman[run.php] is stopping ...
+2023-04-21 23:16:37 pid:5755 Workerman[run.php] stopping ...
+2023-04-21 23:16:37 pid:5755 Workerman[run.php] has been stopped
+2023-04-21 23:16:37 pid:17440 Workerman[run.php] stop success
+2023-04-21 23:16:49 pid:17508 Workerman[run.php] start in DAEMON mode
+2023-04-21 23:20:20 pid:18408 Workerman[run.php] stop 
+2023-04-21 23:20:20 pid:18408 Workerman[run.php] is stopping ...
+2023-04-21 23:20:20 pid:17511 Workerman[run.php] stopping ...
+2023-04-21 23:20:22 pid:17511 worker[none:17513] exit with status 9
+2023-04-21 23:20:22 pid:17511 Workerman[run.php] has been stopped
+2023-04-21 23:20:22 pid:18408 Workerman[run.php] stop success
+2023-04-24 10:10:38 pid:1 Error: Call to undefined method Workerman\Connection\TcpConnection::getHeaders() in D:\laragon\www\radio\io\run.php:34
+Stack trace:
+#0 D:\laragon\www\radio\io\vendor\workerman\workerman\Worker.php(2570): {closure}(Object(Workerman\Connection\TcpConnection))
+#1 D:\laragon\www\radio\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Worker->acceptConnection(Resource id #23)
+#2 D:\laragon\www\radio\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#3 D:\laragon\www\radio\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#4 D:\laragon\www\radio\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#5 D:\laragon\www\radio\io\run.php(639): Workerman\Worker::runAll()
+#6 {main}
+2023-04-24 10:13:15 pid:1 Error: Call to undefined method Workerman\Connection\TcpConnection::getHeaders() in D:\laragon\www\radio\io\run.php:34
+Stack trace:
+#0 D:\laragon\www\radio\io\vendor\workerman\workerman\Worker.php(2570): {closure}(Object(Workerman\Connection\TcpConnection))
+#1 D:\laragon\www\radio\io\vendor\workerman\workerman\Events\Select.php(311): Workerman\Worker->acceptConnection(Resource id #23)
+#2 D:\laragon\www\radio\io\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#3 D:\laragon\www\radio\io\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#4 D:\laragon\www\radio\io\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#5 D:\laragon\www\radio\io\run.php(634): Workerman\Worker::runAll()
+#6 {main}
+2023-04-24 10:49:27 pid:958106 Workerman[run.php] start in DEBUG mode
+2023-04-24 10:53:33 pid:958106 Workerman[run.php] stopping ...
+2023-04-24 10:53:33 pid:958106 Workerman[run.php] has been stopped
+2023-04-24 10:53:46 pid:959384 Workerman[run.php] start in DEBUG mode
+2023-04-24 11:09:02 pid:959384 Workerman[run.php] stopping ...
+2023-04-24 11:09:02 pid:959384 Workerman[run.php] has been stopped
+2023-04-24 11:09:55 pid:964006 Workerman[run.php] start in DEBUG mode
+2023-04-24 11:12:10 pid:964006 Workerman[run.php] stopping ...
+2023-04-24 11:12:10 pid:964006 Workerman[run.php] has been stopped
+2023-04-24 11:12:20 pid:964754 Workerman[run.php] start in DEBUG mode
+2023-04-24 11:14:50 pid:964754 Workerman[run.php] stopping ...
+2023-04-24 11:14:50 pid:964754 Workerman[run.php] has been stopped
+2023-04-24 11:14:57 pid:965438 Workerman[run.php] start in DEBUG mode
+2023-04-24 11:19:20 pid:965438 Workerman[run.php] stopping ...
+2023-04-24 11:19:20 pid:965438 Workerman[run.php] has been stopped
+2023-04-24 11:19:29 pid:966693 Workerman[run.php] start in DEBUG mode
